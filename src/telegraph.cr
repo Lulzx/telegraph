@@ -24,7 +24,7 @@ module Telegraph
 
   def edit_page(access_token : String, path : String, title : String, content : Array, author_name : String)
     method = "editPage"
-    params = {"access_token" => access_token, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc}
+    params = {"access_token" => access_token, "path" => path, "title" => title, "content" => content, "author_name" => author_name}
     get(method, params)
   end
 
