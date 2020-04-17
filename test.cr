@@ -19,12 +19,12 @@ def evaluate(response)
       # puts x["error"]
     end
   rescue exception : KeyError
-      puts "#{exception}"
+    puts "#{exception}"
   end
 end
 
 elapsed_time = Time.measure do
-  short_name = ""
+  short_name = "lulzx"
   author_name = "lulzx"
   response = Telegraph.createAccount(short_name, author_name)
   evaluate(response)
@@ -35,10 +35,10 @@ elapsed_time = Time.measure do
   # response = Telegraph.getPage(path, return_content)
   # evaluate(response)
 
-  access_token="b968da509bb76866c35425099bc0989a5ec3b32997d55286c657e6994bbb"
-  limit=3
+  access_token = "b968da509bb76866c35425099bc0989a5ec3b32997d55286c657e6994bbb"
+  limit = 3
   offset = 0
   # response = Telegraph.getPageList(access_token, limit)
   # evaluate(response)
-  end
+end
 puts elapsed_time
