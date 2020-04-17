@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.33.0">
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/Lulzx/telegraph">
+  <title>Telegraph - github.com/Lulzx/telegraph</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/Lulzx/telegraph/Request" data-name="request">
+      <a href="Request.html">Request</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/Lulzx/telegraph/Telegraph" data-name="telegraph">
+      <a href="Telegraph.html">Telegraph</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Lulzx/telegraph/Telegraph/CreateAccount" data-name="telegraph::createaccount">
+      <a href="Telegraph/CreateAccount.html">CreateAccount</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Lulzx/telegraph/Telegraph/Error" data-name="telegraph::error">
+      <a href="Telegraph/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Telegraph
+
+</h1>
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="Request.html">Request</a></li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="extended-modules" class="anchor" href="#extended-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Extended Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="Telegraph.html">Telegraph</a></li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph/response.cr#L3" target="_blank">
+        telegraph/response.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph/version.cr#L1" target="_blank">
+        telegraph/version.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L3" target="_blank">
+        telegraph.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#createAccount(short_name:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;)-instance-method" class="signature"><strong>#createAccount</strong>(short_name : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#createPage(access_token:String,title:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;,content:Array=[]ofString,return_content:Bool=false)-instance-method" class="signature"><strong>#createPage</strong>(access_token : String, title : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>, content : Array = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, return_content : Bool = <span class="n">false</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#editAccountInfo(access_token:String,short_name:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;)-instance-method" class="signature"><strong>#editAccountInfo</strong>(access_token : String, short_name : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#editPage(access_token:String,path:String,title:String,content:Array,author_name:String)-instance-method" class="signature"><strong>#editPage</strong>(access_token : String, path : String, title : String, content : Array, author_name : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#getAccountInfo(access_token:String,fields:Array=[%E2%80%9Cshort_name%E2%80%9D,%E2%80%9Cauthor_name%E2%80%9D,%E2%80%9Cauthor_url%E2%80%9D])-instance-method" class="signature"><strong>#getAccountInfo</strong>(access_token : String, fields : Array = [“short_name”, “author_name”, “author_url”])</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#getPage(path:String,return_content:Bool=false)-instance-method" class="signature"><strong>#getPage</strong>(path : String, return_content : Bool = <span class="n">false</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#getPageList(access_token:String,offset:Int32=0,limit:Int32=50)-instance-method" class="signature"><strong>#getPageList</strong>(access_token : String, offset : Int32 = <span class="n">0</span>, limit : Int32 = <span class="n">50</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#getViews(path:String,year:Int32,month:Int32,day:Int32,hour:Int32)-instance-method" class="signature"><strong>#getViews</strong>(path : String, year : Int32, month : Int32, day : Int32, hour : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#revokeAccessToken(access_token:String)-instance-method" class="signature"><strong>#revokeAccessToken</strong>(access_token : String)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="Request.html">Request</a></code></h3>
+  
+  
+    <a href="Request.html#get(method,params):String-instance-method" class="tooltip">
+      <span>get(method, params) : String</span>
+    get</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="createAccount(short_name:String,author_name:String=&amp;quot;&amp;quot;,author_url:String=&amp;quot;&amp;quot;)-instance-method">
+      <div class="signature">
+        
+        def <strong>createAccount</strong>(short_name : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#createAccount(short_name:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="createPage(access_token:String,title:String,author_name:String=&amp;quot;&amp;quot;,author_url:String=&amp;quot;&amp;quot;,content:Array=[]ofString,return_content:Bool=false)-instance-method">
+      <div class="signature">
+        
+        def <strong>createPage</strong>(access_token : String, title : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>, content : Array = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, return_content : Bool = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#createPage(access_token:String,title:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;,content:Array=[]ofString,return_content:Bool=false)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="editAccountInfo(access_token:String,short_name:String,author_name:String=&amp;quot;&amp;quot;,author_url:String=&amp;quot;&amp;quot;)-instance-method">
+      <div class="signature">
+        
+        def <strong>editAccountInfo</strong>(access_token : String, short_name : String, author_name : String = <span class="s">&quot;&quot;</span>, author_url : String = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#editAccountInfo(access_token:String,short_name:String,author_name:String=&quot;&quot;,author_url:String=&quot;&quot;)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="editPage(access_token:String,path:String,title:String,content:Array,author_name:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>editPage</strong>(access_token : String, path : String, title : String, content : Array, author_name : String)
+
+        <a class="method-permalink" href="#editPage(access_token:String,path:String,title:String,content:Array,author_name:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="getAccountInfo(access_token:String,fields:Array=[“short_name”,“author_name”,“author_url”])-instance-method">
+      <div class="signature">
+        
+        def <strong>getAccountInfo</strong>(access_token : String, fields : Array = [“short_name”, “author_name”, “author_url”])
+
+        <a class="method-permalink" href="#getAccountInfo(access_token:String,fields:Array=[%E2%80%9Cshort_name%E2%80%9D,%E2%80%9Cauthor_name%E2%80%9D,%E2%80%9Cauthor_url%E2%80%9D])-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="getPage(path:String,return_content:Bool=false)-instance-method">
+      <div class="signature">
+        
+        def <strong>getPage</strong>(path : String, return_content : Bool = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#getPage(path:String,return_content:Bool=false)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="getPageList(access_token:String,offset:Int32=0,limit:Int32=50)-instance-method">
+      <div class="signature">
+        
+        def <strong>getPageList</strong>(access_token : String, offset : Int32 = <span class="n">0</span>, limit : Int32 = <span class="n">50</span>)
+
+        <a class="method-permalink" href="#getPageList(access_token:String,offset:Int32=0,limit:Int32=50)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="getViews(path:String,year:Int32,month:Int32,day:Int32,hour:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>getViews</strong>(path : String, year : Int32, month : Int32, day : Int32, hour : Int32)
+
+        <a class="method-permalink" href="#getViews(path:String,year:Int32,month:Int32,day:Int32,hour:Int32)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="revokeAccessToken(access_token:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>revokeAccessToken</strong>(access_token : String)
+
+        <a class="method-permalink" href="#revokeAccessToken(access_token:String)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Lulzx/telegraph/blob/dcf4549f774ffcc1f5c2e2485501fe2ae5f8cbfa/src/telegraph.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
