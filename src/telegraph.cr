@@ -4,55 +4,55 @@ module Telegraph
   include Request
   extend self
 
-  def createAccount(short_name : String, author_name : String = "", author_url : String = "")
+  def create_account(short_name : String, author_name : String = "", author_url : String = "")
     method = "createAccount"
     params = {"short_name" => short_name, "author_name" => author_name, "author_url" => author_url}
     get(method, params)
   end
 
-  def createPage(access_token : String, title : String, author_name : String = "", author_url : String = "", content : Array = [] of String, return_content : Bool = false)
+  def create_page(access_token : String, title : String, author_name : String = "", author_url : String = "", content : Array = [] of String, return_content : Bool = false)
     method = "createPage"
     params = {"access_token" => access_token, "title" => title, "author_name" => author_name, "author_url" => author_url, "content" => content, "return_content" => return_content}
     get(method, params)
   end
 
-  def editAccountInfo(access_token : String, short_name : String, author_name : String = "", author_url : String = "")
+  def edit_account_info(access_token : String, short_name : String, author_name : String = "", author_url : String = "")
     method = "editAccountInfo"
     params = {"access_token" => access_token, "short_name" => short_name, "author_name" => author_name, "author_url" => author_url}
     get(method, params)
   end
 
-  def editPage(access_token : String, path : String, title : String, content : Array, author_name : String)
+  def edit_page(access_token : String, path : String, title : String, content : Array, author_name : String)
     method = "editPage"
     params = {"access_token" => access_token, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc, "abc" => abc}
     get(method, params)
   end
 
-  def getAccountInfo(access_token : String, fields : Array = [“short_name”, “author_name”, “author_url”])
+  def account_info(access_token : String, fields : Array = [“short_name”, “author_name”, “author_url”])
     method = "getAccountInfo"
     params = {"access_token" => access_token, "fields" => fields}
     get(method, params)
   end
 
-  def getPage(path : String, return_content : Bool = false)
+  def page(path : String, return_content : Bool = false)
     method = "getPage"
     params = {"path" => path, "return_content" => return_content.to_s}
     get(method, params)
   end
 
-  def getPageList(access_token : String, offset : Int32 = 0, limit : Int32 = 50)
+  def page_list(access_token : String, offset : Int32 = 0, limit : Int32 = 50)
     method = "getPageList"
     params = {"access_token" => access_token, "offset" => offset.to_s, "limit" => limit.to_s}
     get(method, params)
   end
 
-  def getViews(path : String, year : Int32, month : Int32, day : Int32, hour : Int32)
+  def views(path : String, year : Int32, month : Int32, day : Int32, hour : Int32)
     method = "getViews"
     params = {"path" => path, "year" => year, "month" => month, "day" => day, "hour" => hour}
     get(method, params)
   end
 
-  def revokeAccessToken(access_token : String)
+  def revoke_access_token(access_token : String)
     method = "revokeAccessToken"
     params = {"access_token" => access_token}
     get(method, params)
