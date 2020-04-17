@@ -1,6 +1,6 @@
 # telegraph
 
-Crystal [Telegraph API](https://telegra.ph) wrapper 
+Crystal [Telegraph API](https://telegra.ph) wrapper [![Build Status](https://travis-ci.com/Lulzx/telegraph.svg?branch=master)](https://travis-ci.com/Lulzx/telegraph)
 
 ## Installation
 
